@@ -9,6 +9,7 @@ public class Questao03 {
 		System.out.println("Entre com um numero inteiro:");
 		int numero = retornaNumero(entrada);
 		System.out.println(verificaSePrimo(numero) ? "O numero é primo" : "O numero não é primo");
+		entrada.close();
 	}
 	
 	private static int retornaNumero(Scanner entrada) {

@@ -5,9 +5,9 @@ package br.edu.letscode.aula03;
  *a dívida*/
 public class Questao04 {
 	private static final double DIVIDA = 10000;
-	private static final double JUROS_DIVIDA = 0.025;
+	private static final double JUROS_DIVIDA = 1.025;
 	private static final double APLICACAO = 1500;
-	private static final double JUROS_APLICACAO = 0.04;
+	private static final double JUROS_APLICACAO = 1.04;
 	
 	public static void main(String[] args) {
 		for(int i = 1;;i++) {
@@ -19,10 +19,10 @@ public class Questao04 {
 	}
 	
 	private static double calculaDividaMes(int i) {
-		return DIVIDA * Math.pow((1 + 0.025), i);
+		return DIVIDA * Math.pow(JUROS_DIVIDA, i);
 	}
 	
 	private static double calculaAplicacaoMes(int i) {
-		return APLICACAO * Math.pow((1 + 0.04), i);
+		return APLICACAO * Math.pow(JUROS_APLICACAO, i);
 	}
 }
