@@ -18,13 +18,19 @@ public class Desafio01 {
 		c = input.nextInt();
 		
 		if(a > b && a > c) {
+			
 			System.out.println(resultado + a);
+			
 		} else if(b > a && b > c) {
+			
 			System.out.println(resultado + b);
+			
 		} else {
+			
 			System.out.println(resultado + c);
+			
 		}
 		
-		//System.out.println(resultado + (a > b && a > c ? a : b > a && b > c ? b : c));
+		System.out.println(resultado + (a > b && a > c ? a : b > a && b > c ? b : c));
 	}
 }
