@@ -3,6 +3,9 @@ package com.letscode;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        String vazio = " ";
+        if(vazio.isBlank()) {
+            System.out.println("Nulo");
+        }
     }
 }
