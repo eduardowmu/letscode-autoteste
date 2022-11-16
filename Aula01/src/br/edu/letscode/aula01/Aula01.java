@@ -5,7 +5,9 @@ import java.util.Scanner;
 
 public class Aula01 {
 	public static void main(String[] args) {
-		Scanner input = new Scanner(System.in);
+		int randomico = new Random().nextInt(1000);
+		System.out.println(randomico);
+		/*Scanner input = new Scanner(System.in);
 		
 		System.out.println("Digite seu nome: ");
 		String name = input.nextLine();
@@ -17,7 +19,7 @@ public class Aula01 {
 		System.out.println("Digite seu ano de nascimento:");
 		int nascimento = input.nextInt();
 		int anoAtual = LocalDate.now().getYear();
-		System.out.println("Você tem ".concat(String.valueOf(anoAtual - nascimento) + " anos"));
-		input.close();
+		System.out.println("Vocï¿½ tem ".concat(String.valueOf(anoAtual - nascimento) + " anos"));
+		input.close();*/
 	}
 }
