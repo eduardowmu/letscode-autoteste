@@ -21,7 +21,8 @@ public class Exercicio1 {
 		} catch(Exception e) {
 			System.out.print("Valor inválido. Tente novamente: ");
 			valor = 0;
-			return getValor(new Scanner(System.in));
+			entrada.nextLine();
+			return getValor(entrada);//getValor(new Scanner(System.in));
 		}
 	}
 }
